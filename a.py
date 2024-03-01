@@ -1,9 +1,10 @@
-var_numeroInt = int(input('ingrese la cantidad de numeros que desea evaluar'))
-contador = 0
+cantidadint = int(input("cantidad de numeros: "))
+contadorint = 1 
+contadornumerosInt = 0 
+while contadorint <= cantidadint: 
+    numeroint = int(input("ingrese un numero "))
+    if numeroint >= 10 and numeroint <= 20:
+        contadornumerosInt  += 1
+    contadorint += 1
 
-for i in range(var_numeroInt):
-    num = float(input(f"ingrse el numero {i + 1}: "))
-    if num >= 10 and num <=20:
-        contador += 1
-        
-print(f'la cantidad de numeros en el rango de 10 a 20 es: {contador}')
+print("la cantidad de numerosde 10 a 20 son:   ",contadornumerosInt)
